@@ -1,6 +1,7 @@
 FROM node:latest
 COPY . .
-RUN npm ci
+
+RUN npx express-generator && npm build
 
 EXPOSE 3000
 

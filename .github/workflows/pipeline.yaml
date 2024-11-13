@@ -21,6 +21,8 @@ jobs:
           persist-credentials: false
       - name: build Docker image
         run: | 
+          
+
           docker build -t patek-app:latest .
           docker tag patek-app:latest ${{ github.run_id }}
         
